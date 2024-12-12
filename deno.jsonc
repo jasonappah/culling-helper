@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "build:linux": "deno compile --allow-read --allow-write --allow-env --output=build/bin/linux_x86/culling-helper --target=x86_64-unknown-linux-gnu --config=deno.json src/main.ts",
+    "build:macos:arm": "deno compile --allow-read --allow-write --allow-env --output=build/bin/macos_arm/culling-helper --target=aarch64-apple-darwin --config=deno.json src/main.ts",
+    "build": {
+      "dependencies": ["build:linux", "build:macos:arm"],
+      "command": "exit 0"
+    }
+  },
+  "imports": {
+    // exiftool-vendored, cliffy
+  }
+}
