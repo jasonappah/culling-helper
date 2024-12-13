@@ -5,9 +5,7 @@
     "build": {
       "dependencies": ["build:linux", "build:macos:arm"],
       "command": "exit 0"
-    }
-  },
-  "imports": {
-    // exiftool-vendored, cliffy
+    },
+    "run": "deno run --allow-read --allow-write --allow-env --allow-sys --allow-run --config=deno.jsonc src/main.ts"
   }
 }

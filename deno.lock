@@ -1,0 +1,152 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@cliffy/command@1.0.0-rc.7": "1.0.0-rc.7",
+    "jsr:@cliffy/flags@1.0.0-rc.7": "1.0.0-rc.7",
+    "jsr:@cliffy/internal@1.0.0-rc.7": "1.0.0-rc.7",
+    "jsr:@cliffy/table@1.0.0-rc.7": "1.0.0-rc.7",
+    "jsr:@std/fmt@~1.0.2": "1.0.3",
+    "jsr:@std/fs@*": "1.0.6",
+    "jsr:@std/fs@1.0.6": "1.0.6",
+    "jsr:@std/path@1.0.6": "1.0.6",
+    "jsr:@std/path@^1.0.8": "1.0.8",
+    "jsr:@std/text@~1.0.7": "1.0.9",
+    "npm:@types/node@*": "22.5.4",
+    "npm:exiftool-vendored@16.4.0": "16.4.0",
+    "npm:exiftool-vendored@29.0.0": "29.0.0",
+    "npm:libraw.js@*": "3.0.0",
+    "npm:libraw.js@3.0.0": "3.0.0"
+  },
+  "jsr": {
+    "@cliffy/command@1.0.0-rc.7": {
+      "integrity": "1288808d7a3cd18b86c24c2f920e47a6d954b7e23cadc35c8cbd78f8be41f0cd",
+      "dependencies": [
+        "jsr:@cliffy/flags",
+        "jsr:@cliffy/internal",
+        "jsr:@cliffy/table",
+        "jsr:@std/fmt",
+        "jsr:@std/text"
+      ]
+    },
+    "@cliffy/flags@1.0.0-rc.7": {
+      "integrity": "318d9be98f6a6417b108e03dec427dea96cdd41a15beb21d2554ae6da450a781",
+      "dependencies": [
+        "jsr:@std/text"
+      ]
+    },
+    "@cliffy/internal@1.0.0-rc.7": {
+      "integrity": "10412636ab3e67517d448be9eaab1b70c88eba9be22617b5d146257a11cc9b17"
+    },
+    "@cliffy/table@1.0.0-rc.7": {
+      "integrity": "9fdd9776eda28a0b397981c400eeb1aa36da2371b43eefe12e6ff555290e3180",
+      "dependencies": [
+        "jsr:@std/fmt"
+      ]
+    },
+    "@std/fmt@1.0.3": {
+      "integrity": "97765c16aa32245ff4e2204ecf7d8562496a3cb8592340a80e7e554e0bb9149f"
+    },
+    "@std/fs@1.0.6": {
+      "integrity": "42b56e1e41b75583a21d5a37f6a6a27de9f510bcd36c0c85791d685ca0b85fa2",
+      "dependencies": [
+        "jsr:@std/path@^1.0.8"
+      ]
+    },
+    "@std/path@1.0.6": {
+      "integrity": "ab2c55f902b380cf28e0eec501b4906e4c1960d13f00e11cfbcd21de15f18fed"
+    },
+    "@std/path@1.0.8": {
+      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    },
+    "@std/text@1.0.9": {
+      "integrity": "b2db4abc3e6ab93eb0280a0d5e126fd3fca80955bcc297ccaaf555e995eab747"
+    }
+  },
+  "npm": {
+    "@photostructure/tz-lookup@11.0.0": {
+      "integrity": "sha512-QMV5/dWtY/MdVPXZs/EApqzyhnqDq1keYEqpS+Xj2uidyaqw2Nk/fWcsszdruIXjdqp1VoWNzsgrO6bUHU1mFw=="
+    },
+    "@types/luxon@2.4.0": {
+      "integrity": "sha512-oCavjEjRXuR6URJEtQm0eBdfsBiEcGBZbq21of8iGkeKxU1+1xgKuFPClaBZl2KB8ZZBSWlgk61tH6Mf+nvZVw=="
+    },
+    "@types/luxon@3.4.2": {
+      "integrity": "sha512-TifLZlFudklWlMBfhubvgqTXRzLDI5pCbGa4P8a3wPyUQSW+1xQ5eDsreP9DWHX3tjq1ke96uYG/nwundroWcA=="
+    },
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
+    "batch-cluster@10.4.3": {
+      "integrity": "sha512-2lEge+Ok62AEqe9JLcBHed0pW08T2B/06T/XkPVKtXBML+EkFY/kjU2iBU6a0Uw+LsbRRbfqQbx09vobnloWpw=="
+    },
+    "batch-cluster@13.0.0": {
+      "integrity": "sha512-EreW0Vi8TwovhYUHBXXRA5tthuU2ynGsZFlboyMJHCCUXYa2AjgwnE3ubBOJs2xJLcuXFJbi6c/8pH5+FVj8Og=="
+    },
+    "exiftool-vendored.exe@12.41.0": {
+      "integrity": "sha512-YdUDnBdDz+O2InQSZKtqvGJlQD/UeQ6hIUbSZz5hQ2yGILG+B9Fjo/2W0OBpLAzSfrPhyuKfl7wBJSnj9lrvfw=="
+    },
+    "exiftool-vendored.exe@13.0.0": {
+      "integrity": "sha512-4zAMuFGgxZkOoyQIzZMHv1HlvgyJK3AkNqjAgm8A8V0UmOZO7yv3pH49cDV1OduzFJqgs6yQ6eG4OGydhKtxlg=="
+    },
+    "exiftool-vendored.pl@12.41.0": {
+      "integrity": "sha512-Vxv65Ghd0RXWHyLZ8Sn2SR0xv97JFN91x7bPgEs1hs1iQHUI2ObEV9P0DUdl6+ThTCv2gH5zqz0HawX0DDJ4Tg=="
+    },
+    "exiftool-vendored.pl@13.0.1": {
+      "integrity": "sha512-+BRRzjselpWudKR0ltAW5SUt9T82D+gzQN8DdOQUgnSVWWp7oLCeTGBRptbQz+436Ihn/mPzmo/xnf0cv/Qw1A=="
+    },
+    "exiftool-vendored@16.4.0": {
+      "integrity": "sha512-4U4tlNEqkDjjxTbYDWEr6SagQmIJfvQW7bRdG4gXDm56x84SyxEw7vRh08ItqPGPVp+QzSel0FZ8Uer0twN/AQ==",
+      "dependencies": [
+        "@types/luxon@2.4.0",
+        "batch-cluster@10.4.3",
+        "exiftool-vendored.exe@12.41.0",
+        "exiftool-vendored.pl@12.41.0",
+        "he",
+        "luxon@2.5.2",
+        "tz-lookup"
+      ]
+    },
+    "exiftool-vendored@29.0.0": {
+      "integrity": "sha512-BW2Fr7okYP1tN7KIIREy8gOx9WggpPsbKc3BTAS4dLgSup50LjdQttxF9kyDP+27ZayllK+d0rfMYPAixPBtQw==",
+      "dependencies": [
+        "@photostructure/tz-lookup",
+        "@types/luxon@3.4.2",
+        "batch-cluster@13.0.0",
+        "exiftool-vendored.exe@13.0.0",
+        "exiftool-vendored.pl@13.0.1",
+        "he",
+        "luxon@3.5.0"
+      ]
+    },
+    "he@1.2.0": {
+      "integrity": "sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw=="
+    },
+    "libraw.js@3.0.0": {
+      "integrity": "sha512-HjdOhw/walDjkughqtokFCyW81n+30IVMOYAIwhsr0j099ToM9yg5wzBcUuZ2hAAwgdXLIzggF9tI3dTUzMdcQ==",
+      "dependencies": [
+        "node-addon-api",
+        "node-gyp-build"
+      ]
+    },
+    "luxon@2.5.2": {
+      "integrity": "sha512-Yg7/RDp4nedqmLgyH0LwgGRvMEKVzKbUdkBYyCosbHgJ+kaOUx0qzSiSatVc3DFygnirTPYnMM2P5dg2uH1WvA=="
+    },
+    "luxon@3.5.0": {
+      "integrity": "sha512-rh+Zjr6DNfUYR3bPwJEnuwDdqMbxZW7LOQfUN4B54+Cl+0o5zaU9RJ6bcidfDtC1cWCZXQ+nvX8bf6bAji37QQ=="
+    },
+    "node-addon-api@3.2.1": {
+      "integrity": "sha512-mmcei9JghVNDYydghQmeDX8KoAm0FAiYyIcUt/N4nhyAipB17pllZQDOJD2fotxABnt4Mdz+dKTO7eftLg4d0A=="
+    },
+    "node-gyp-build@4.8.4": {
+      "integrity": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=="
+    },
+    "tz-lookup@6.1.25": {
+      "integrity": "sha512-fFewT9o1uDzsW1QnUU1ValqaihFnwiUiiHr1S79/fxOzKXYYvX+EHeRnpvQJ9B3Qg67wPXT6QF2Esc4pFOrvLg=="
+    },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    }
+  }
+}
