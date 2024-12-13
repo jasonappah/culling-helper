@@ -59,7 +59,7 @@ await new Command()
     for (const image of Object.keys(jpgToRawMapping)) {
       const path = await Deno.realPath(image)
       const metadata = await exiftool.read(path);
-      const rating = metadata.Rating;
+      const rating = metadata.Rating ?? 0;
       ratings[image] = rating;
     }
 
@@ -74,9 +74,9 @@ await new Command()
     const ratings = JSON.parse(await Deno.readTextFile(`./ratings.json`));
     const jpgToRawMapping = JSON.parse(await Deno.readTextFile(`./mapping.json`));
     
-    for (const jpgRelativePath of Object.keys(jpgToRawMapping)) {
+    for (const jpgRelativePath of Object.keys(ratings)) {
       const rawPath = jpgToRawMapping[jpgRelativePath];
-      const rating = jpgRelativePath in ratings ? ratings[jpgRelativePath] : 0;
+      const rating = ratings[jpgRelativePath]
       await exiftool.write(rawPath, {
         Rating: rating,
       }, {
