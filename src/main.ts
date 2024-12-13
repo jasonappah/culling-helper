@@ -3,11 +3,12 @@ import { expandGlob, exists } from "jsr:@std/fs@1.0.6"
 import { exiftool } from "npm:exiftool-vendored@29.0.0";
 
 const TEN_GB_IN_BYTES = 10_000_000_000
+const VERSION = "0.0.1"
 
 await new Command()
   .name("culling-helper")
   .description("A CLI to help me with culling photos on a network drive.")
-  .version("0.0.1")
+  .version(VERSION)
   .command("prepare", "Convert RAW photos to JPGs")
   .option("-d, --directory <directory:file>", "Directory to search for RAW photos", {default: Deno.cwd()})
   .option("-l, --limit <bytes:number>", "Limit the file size of each batch", {default: TEN_GB_IN_BYTES }) 
@@ -90,4 +91,5 @@ async function goHome(dir: string) {
   const h = `${dir}/culling-helper`
   await Deno.mkdir(h, {recursive: true});
   Deno.chdir(h);
+  await Deno.writeTextFile(`${h}/README.md`, "This directory is used to store temporary files created by [`culling-helper`](https://github.com/jasonappah/culling-helper). It is safe to delete this directory. CLI version: ${VERSION}");
 }
